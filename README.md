@@ -1,1 +1,1 @@
-# fittify-frontend
+# fittify
