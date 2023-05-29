@@ -1,3 +1,7 @@
+<script>
+    import '../app.css';
+</script>
+
 <div class="box has-text-centered columns m-2 level-right">
     <button class="button is-link is-inverted is-rounded">
         <a href="/login" class="columns is-variable is-1">
@@ -8,7 +12,9 @@
         </a>
     </button>
     <button class="button is-info is-rounded">
-        Get Started
+        <a href="/signup" class="columns is-variable is-1">
+            <p class="column">Get Started</p>
+        </a>
     </button>
 </div>
   
