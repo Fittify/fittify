@@ -27,7 +27,9 @@
 
 <div class="columns">
 	<div class="column is-half">
-		<div class="box">Image</div>
+		<figure class="image">
+			<img src="/log_in.jpg">
+		</figure>
 	</div>
 	<div class="column is-half">
 		<div class="box">

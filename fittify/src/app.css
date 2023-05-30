@@ -2,3 +2,30 @@ a {
     text-decoration: none;
     color: initial;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.titlebar {
+
+}
+
+.landingPage{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("$lib/public/images/home.jpg");
+}
+.landingPage h1{
+    font-size: 32px; 
+}
+.landingPage p{
+    font-size: 18px;    
+}
+
+.landingPageButton{
+    text-decoration: none;
+    font-size: 10px;
+    color: 369DEF;
+}
