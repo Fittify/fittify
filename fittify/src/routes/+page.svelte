@@ -31,7 +31,7 @@
   </section>
 
   <section class="landingPage"></section>
-</section>
+
 
 
 
