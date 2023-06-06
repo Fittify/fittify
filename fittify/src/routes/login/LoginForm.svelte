@@ -27,7 +27,7 @@
 		<label class="label" for="password">Password</label>
 		<input bind:value={password} class="input" id="password" name="password" placeholder="Enter Password" type="password" />
 	</div>
-	<div class="field is-grouped">
+	<div class="field is-grouped has-text-centered">
 		<button class="button is-link">Log In</button>
 	</div>
 </form>

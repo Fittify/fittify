@@ -1,12 +1,15 @@
 <script lang="ts">
-	import Header from "$lib/Header.svelte";
+	/*import Header from "$lib/Header.svelte";*/
 	import WelcomeNavigator from "$lib/WelcomeNavigator.svelte";
+	import NewHeader from "$lib/NewHeader.svelte";
 	import '../app.css';
 </script>
 
-<Header>
-	<WelcomeNavigator />
-</Header>
+
+<!--<Header>-->
+	<!--<WelcomeNavigator />-->
+	<NewHeader/>
+<!--</Header>-->
 
 
 	

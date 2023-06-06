@@ -3,6 +3,7 @@
 	import Header from "$lib/Header.svelte";
 	import { accountService } from "../../services/account-service";
 	import WelcomeNavigator from "$lib/WelcomeNavigator.svelte";
+	import NewHeader from "$lib/NewHeader.svelte";
 	import LoginForm from "./LoginForm.svelte";
 	let email = "";
 	let password = "";
@@ -21,20 +22,20 @@
 	}
 </script>
 
-<Header>
-	<WelcomeNavigator />
-</Header>
 
-<div class="columns">
-	<div class="column is-half">
-		<figure class="image">
-			<img src="/log_in.jpg">
-		</figure>
+<NewHeader/>
+
+
+
+<div class="Login">
+
+	<div class="LoginImage" id="LoginImage">
+		<img src="/log_in.jpg">
 	</div>
-	<div class="column is-half">
-		<div class="box">
-			<h1 class="title has-text-centered">Login</h1>
-			<LoginForm />
-		</div>
+
+	<div class="LoginForm" id="LoginForm">
+		<h1 class="title has-text-centered">Login</h1>
+		<LoginForm />
 	</div>
+
 </div>

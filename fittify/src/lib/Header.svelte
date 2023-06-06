@@ -4,6 +4,7 @@
 
 <div class="columns is-vcentered">
 	<div class="column is-half">
+		
 		<TitleBar title={"Fittify"} />
 	</div>
 	<div class="column">
