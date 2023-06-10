@@ -5,17 +5,17 @@ export const accountService = {
 
     baseUrl: "http://localhost:8000",
 
-	async login(email, password) {
+	async login(username, password) {
 		try {
-			const response = await axios.post(`${this.baseUrl}/api/users/authenticate`, { email, password });
+			const response = await axios.post(`${this.baseUrl}/login`, { username: username, password: password });
 			axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.token;
 			if (response.data.success) {
 				loggedInUser.set({
-					email: email,
+					username: username,
 					token: response.data.token,
 					_id: response.data.id
 				});
-				localStorage.account = JSON.stringify({ email: email, token: response.data.token });
+				localStorage.account = JSON.stringify({ username: username, token: response.data.token });
 				return true;
 			}
 			return false;
@@ -36,13 +36,14 @@ export const accountService = {
 
     async signup(firstName, lastName, email, password) {
         try {
-            const userDetails = {
-                firstName: firstName,
-				lastName: lastName,
+            const user_data = {
+				username: firstName+'_'+lastName,
+                first_name: firstName,
+				last_name: lastName,
 				email: email,
 				password: password
             };
-            await axios.post(this.baseUrl + "/api/users", userDetails);
+            await axios.post(this.baseUrl + "/register", user_data);
             return true;
         } catch (error) {
             return false;

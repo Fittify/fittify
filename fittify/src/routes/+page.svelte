@@ -1,37 +1,37 @@
-<script lang="ts">
+<script>
 	import Header from "$lib/Header.svelte";
-	import WelcomeNavigator from "$lib/WelcomeNavigator.svelte";
 	import '../app.css';
 </script>
 
-<Header>
-	<WelcomeNavigator />
-</Header>
+<Header />
 
-
-	
-<section class="hero is-fullheight">
-	<div class="hero-body has-text-centered">
-	  <div class="">
-		<p class="title has-text-centered">
-		  Fittify
-		</p>
-		<p class="subtitle has-text-centered">
-			Are you looking for a partner for your favorite sport activity in Regensburg?
-		</p>
-
-		<button class="button is-info is-rounded has-text-centered">
-			<a href="/signup" class="columns is-variable is-1">
-				<p class="column">Sign up!</p>
-			</a>
-		</button>
-
-	  </div>
+<section class="columns is-vcentered is-full is-centered background-home-image">
+	<div class="column is-three-fifths hero is-fullheight">
+		<div class="hero-body has-text-centered">
+			<div>
+				<p class="title is-1 white-font">
+					Fittify
+				</p>
+				<p class="subtitle is-4 white-font">
+					Are you looking for a partner for your favorite sport activity in Regensburg?
+				</p>
+				<div class="columns is-centered">
+					<div class="column is-three-fifths is-centered">
+						<button class="button is-info is-rounded is-fullwidth">
+							<a href="/signup" class="a-link-without-decoration">
+								<p class="column white-font">Sign up!</p>
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="columns is-centered">
+					<div class="column is-half is-centered">
+						<p class="white-font black-background">Or if you already have an account - 
+							<a class="white-font-on-hover" href="/login">sign in</a>!
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div>
 	</div>
-  </section>
-
-  <section class="landingPage"></section>
 </section>
-
-
-

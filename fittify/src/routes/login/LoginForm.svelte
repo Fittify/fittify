@@ -2,16 +2,16 @@
 	import { goto } from "$app/navigation";
 	import { accountService } from "../../services/account-service";
 
-	let email = "";
+	let username = "";
 	let password = "";
 	let errorMessage = "";
 
 	async function login() {
-		let success = await accountService.login(email, password);
+		let success = await accountService.login(username, password);
 		if (success) {
 			goto("/landpage");
 		} else {
-			email = "";
+			username = "";
 			password = "";
 			errorMessage = "Invalid Credentials";
 		}
@@ -20,8 +20,8 @@
 
 <form on:submit|preventDefault={login}>
 	<div class="field">
-		<label class="label" for="email">Email</label>
-		<input bind:value={email} class="input" id="email" name="email" placeholder="Enter email" type="text" />
+		<label class="label" for="username">Username</label>
+		<input bind:value={username} class="input" id="username" name="username" placeholder="Enter username" type="text" />
 	</div>
 	<div class="field">
 		<label class="label" for="password">Password</label>

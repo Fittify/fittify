@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
-<div class="container">
+<div class="container is-fullheight is-fullwidth">
 	<slot />
 </div>

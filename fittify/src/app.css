@@ -1,31 +1,43 @@
-a {
+.a-link-without-decoration {
     text-decoration: none;
     color: initial;
 }
 
-html {
-    scroll-behavior: smooth;
+.white-font {
+    color: rgb(255, 255, 255);
 }
 
-.titlebar {
-
+a.white-font-on-hover:hover {
+    color: white;
 }
 
-.landingPage{
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background-image: url("$lib/public/images/home.jpg");
-}
-.landingPage h1{
-    font-size: 32px; 
-}
-.landingPage p{
-    font-size: 18px;    
+.black-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
-.landingPageButton{
-    text-decoration: none;
-    font-size: 10px;
-    color: 369DEF;
+.navbar-start, .navbar-item, .navbar-brand {
+    display: inline-block;
+}
+
+.navbar-brand {
+    width: 12%;
+}
+
+.background-home-image {
+    background-image: url("/home.jpg");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-log-in-image {
+    background-image: url("/log_in.jpg");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-sign-up-image {
+    background-image: url("/sign_up.jpg");
+    background-position: "center";
+    background-size: cover;
 }
