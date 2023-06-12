@@ -17,11 +17,11 @@
 				</p>
 				<div class="columns is-centered">
 					<div class="column is-three-fifths is-centered">
-						<button class="button is-info is-rounded is-fullwidth">
-							<a href="/signup" class="a-link-without-decoration">
+						<a href="/signup" class="a-link-without-decoration">
+							<button class="button is-info is-rounded is-fullwidth">
 								<p class="column white-font">Sign up!</p>
-							</a>
-						</button>
+							</button>
+						</a>
 					</div>
 				</div>
 				<div class="columns is-centered">

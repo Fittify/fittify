@@ -5,7 +5,7 @@
 
 <Header />
 
-<section class="columns is-full is-vcentered is-centered background-log-in-image">
+<section class="columns is-full is-vcentered is-centered background-sign-up-image">
 	<div class="column is-half hero is-fullheight" />
 	<div class="column is-half hero is-fullheight">
 		<div class="columns is-vcentered is-centered">
