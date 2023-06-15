@@ -1,0 +1,43 @@
+.a-link-without-decoration {
+    text-decoration: none;
+    color: initial;
+}
+
+.white-font {
+    color: rgb(255, 255, 255);
+}
+
+a.white-font-on-hover:hover {
+    color: white;
+}
+
+.black-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navbar-start, .navbar-item, .navbar-brand {
+    display: inline-block;
+}
+
+.navbar-brand {
+    width: 12%;
+}
+
+.background-home-image {
+    background-image: url("/home.jpg");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-log-in-image {
+    background-image: url("/log_in.jpg");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-sign-up-image {
+    background-image: url("/sign_up.jpg");
+    background-position: "center";
+    background-size: cover;
+}
