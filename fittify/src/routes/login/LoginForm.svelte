@@ -9,7 +9,7 @@
 	async function login() {
 		let success = await accountService.login(username, password);
 		if (success) {
-			goto("/landpage");
+			goto("/lobbies");
 		} else {
 			username = "";
 			password = "";
@@ -19,16 +19,16 @@
 </script>
 
 <form on:submit|preventDefault={login}>
-	<div class="field">
-		<label class="label" for="username">Username</label>
-		<input bind:value={username} class="input" id="username" name="username" placeholder="Enter username" type="text" />
+	<div class="field is-size-1">
+		<label class="label is-size-3" for="username">Username</label>
+		<input bind:value={username} class="input is-size-4 is-rounded" id="username" name="username" placeholder="Enter username" type="text" />
 	</div>
 	<div class="field">
-		<label class="label" for="password">Password</label>
-		<input bind:value={password} class="input" id="password" name="password" placeholder="Enter Password" type="password" />
+		<label class="label is-size-3" for="password">Password</label>
+		<input bind:value={password} class="input is-size-4 is-rounded" id="password" name="password" placeholder="Enter Password" type="password" />
 	</div>
-	<div class="field is-grouped">
-		<button class="button is-link">Log In</button>
+	<div class="field">
+		<button class="button is-link is-size-3 is-rounded">Log In</button>
 	</div>
 </form>
 {#if errorMessage}

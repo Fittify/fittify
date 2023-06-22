@@ -1,32 +1,32 @@
 <script>
-	import Header from "$lib/Header.svelte";
 	import '../app.css';
+	import WelcomeNavigator from "../lib/WelcomeNavigator.svelte";
 </script>
 
-<Header />
+<WelcomeNavigator />
 
 <section class="columns is-vcentered is-full is-centered background-home-image">
-	<div class="column is-three-fifths hero is-fullheight">
-		<div class="hero-body has-text-centered">
-			<div>
-				<p class="title is-1 white-font">
-					Fittify
+	<div class="column is-three-fifths hero is-fullheight is-centered">
+		<div class="hero-body is-centered has-text-centered">
+			<div class="container has-text-centered">
+				<p class="is-size-1 has-text-white has-text-weight-bold">
+					FITTIFY
 				</p>
-				<p class="subtitle is-4 white-font">
+				<p class="subtitle is-size-3 has-text-white">
 					Are you looking for a partner for your favorite sport activity in Regensburg?
 				</p>
 				<div class="columns is-centered">
 					<div class="column is-three-fifths is-centered">
 						<a href="/signup" class="a-link-without-decoration">
-							<button class="button is-info is-rounded is-fullwidth">
-								<p class="column white-font">Sign up!</p>
+							<button class="button is-info is-rounded is-fullwidth is-size-4">
+								<p class="column has-text-white is-size-3">Sign up!</p>
 							</button>
 						</a>
 					</div>
 				</div>
 				<div class="columns is-centered">
 					<div class="column is-half is-centered">
-						<p class="white-font black-background">Or if you already have an account - 
+						<p class="is-size-4 has-text-white black-background">Or if you already have an account - 
 							<a class="white-font-on-hover" href="/login">sign in</a>!
 						</p>
 					</div>
