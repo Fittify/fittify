@@ -3,7 +3,7 @@ import { loggedInUser } from "../stores";
 
 export const accountService = {
 
-    baseUrl: "http://fittify.pythonanywhere.com",
+    baseUrl: "https://fittify.pythonanywhere.com",
 	localUrl: "http://localhost:8000",
 
 	async login(username, password) {
