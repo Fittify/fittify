@@ -19,16 +19,16 @@
 </script>
 
 <form on:submit|preventDefault={login}>
-	<div class="field is-size-2">
-		<label class="label is-size-4" for="username">Username</label>
-		<input bind:value={username} class="input is-size-5 is-rounded" id="username" name="username" placeholder="Enter username" type="text" />
+	<div class="field is-size-3">
+		<label class="label is-size-5" for="username">Username</label>
+		<input bind:value={username} class="input is-size-6 is-rounded" id="username" name="username" placeholder="Enter username" type="text" />
 	</div>
 	<div class="field">
-		<label class="label is-size-4" for="password">Password</label>
-		<input bind:value={password} class="input is-size-5 is-rounded" id="password" name="password" placeholder="Enter Password" type="password" />
+		<label class="label is-size-5" for="password">Password</label>
+		<input bind:value={password} class="input is-size-6 is-rounded" id="password" name="password" placeholder="Enter Password" type="password" />
 	</div>
 	<div class="field">
-		<button class="button is-link is-size-4 is-rounded">Log In</button>
+		<button class="button is-link is-size-5 is-rounded">Log In</button>
 	</div>
 </form>
 {#if errorMessage}

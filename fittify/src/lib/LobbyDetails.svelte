@@ -12,7 +12,7 @@
         <div class="column is-full">
             <div class="is-flex is-justify-content-space-between">
                 <div>
-                    <span class="is-size-3 has-text-black has-text-weight-bold">
+                    <span class="is-size-4 has-text-black has-text-weight-bold">
                         {lobby.title}
                     </span>
                 </div>
@@ -77,8 +77,8 @@
         </div>
         <div class="column is-full has-text-centered">
             {#if username && !(lobby.players.includes(username) || lobby.author_username === username)}
-            <button class="button is-info is-rounded is-size-4" on:click>
-                <p class="column has-text-white is-size-4">Join</p>
+            <button class="button is-info is-rounded is-size-5" on:click>
+                <p class="column has-text-white is-size-5">Join</p>
             </button>
             {/if}
         </div>

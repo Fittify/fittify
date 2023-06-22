@@ -21,7 +21,7 @@
 </script>
 
 <Header />
-<section class="columns is-full mt-6 pt-6 mx-6">
+<section class="columns is-full mt-6 pt-5 mx-6">
     <div class="column is-half">
         <div class="columns is-full is-multiline">
         {#each lobbies as lobby, index}
@@ -31,13 +31,13 @@
         {/each}
         </div>
         <a href="/create-lobby" class="a-link-without-decoration overlay is-flex">
-            <button class="button is-info is-rounded is-size-4">
-                <p class="column has-text-white is-size-4">+ Create Lobby</p>
+            <button class="button is-info is-rounded is-size-5">
+                <p class="column has-text-white is-size-5">+ Create Lobby</p>
             </button>
         </a>
     </div>
     <div class="is-overlay overlay column is-half is-offset-half ">
-        <div class="hero is-fullheight m-6 p-6">
+        <div class="hero is-fullheight m-6 pt-5 pb-6">
             {#if selectedLobby}
             <LobbyDetails lobby={selectedLobby} on:click={() => joinLobby()}/>
             {:else}

@@ -101,3 +101,9 @@ a.white-font-on-hover:hover {
     bottom: 40px;
     opacity: 1;
 }
+
+.scroll-blocked {
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}

@@ -7,7 +7,7 @@
 <Header />
 <section class="columns is-full is-vcentered is-centered is-gapless scroll-blocked">
 	<div class="column is-half hero is-fullheight background-lobby-no-sport-image">
-		<a href="/lobbies" class="mt-6 pt-6 pl-5 is-size-3 has-text-weight-medium has-text-black a-link-without-decoration">
+		<a href="/lobbies" class="mt-6 pt-6 pl-5 is-size-4 has-text-weight-medium has-text-black a-link-without-decoration">
 			<div class="icon">
 				<i class="fas fa-solid fa-chevron-left"></i>
 			</div>
@@ -16,10 +16,9 @@
 	</div>
 	<div class="column is-half">
 		<div class="columns is-vcentered is-centered">
-			<div class="column">
-				<div class="container hero box is-fullheight">
-					<p class="is-size-3">Create new lobby</p>
-					<div class="hero-body">
+			<div class="column pb-0 mb-0">
+				<div class="container hero box is-fullheight pb-0 mb-0">
+					<div class="hero-body pb-0 mb-0">
 						<div class="container">
 							<LobbyCreateForm />
 						</div>
