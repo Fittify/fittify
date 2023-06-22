@@ -104,6 +104,4 @@ a.white-font-on-hover:hover {
 
 .scroll-blocked {
     overflow: hidden;
-    height: 100%;
-    box-sizing: border-box;
 }
