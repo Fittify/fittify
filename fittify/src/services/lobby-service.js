@@ -90,7 +90,8 @@ export const lobbyService = {
             author_username: "username_1"
         },
 ],
-    baseUrl: "http://localhost:8000",
+    localUrl: "http://localhost:8000",
+    baseUrl: "http://fittify.pythonanywhere.com",
 
     async createLobby(lobby) {
         this.lobbies.push(lobby);
