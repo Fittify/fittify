@@ -7,6 +7,8 @@ export interface User {
 }
 
 export interface LoggedInUser {
+	firstName: string;
+	lastName: string;
 	email: string;
 	token: string;
 	_id: string;

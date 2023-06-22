@@ -9,13 +9,14 @@ export const accountService = {
 		try {
 			const response = await axios.post(`${this.baseUrl}/login`, { username: username, password: password });
 			axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.token;
-			if (response.data.success) {
+			if (response.status == 200) {
 				loggedInUser.set({
 					username: username,
 					token: response.data.token,
 					_id: response.data.id
 				});
-				localStorage.account = JSON.stringify({ username: username, token: response.data.token });
+				localStorage.token = response.data.token;
+				localStorage.username = String(username);
 				return true;
 			}
 			return false;
@@ -31,7 +32,8 @@ export const accountService = {
 			_id: ""
 		});
 		axios.defaults.headers.common["Authorization"] = "";
-        localStorage.removeItem("account");
+        localStorage.removeItem("token");
+		localStorage.removeItem("username");
 	},
 
     async signup(firstName, lastName, email, password) {
@@ -48,5 +50,9 @@ export const accountService = {
         } catch (error) {
             return false;
         }
-    }
+    },
+
+	getUsername() {
+		return localStorage.getItem("username");
+	},
 };

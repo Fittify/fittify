@@ -41,3 +41,63 @@ a.white-font-on-hover:hover {
     background-position: "center";
     background-size: cover;
 }
+
+.background-lobby-no-sport-image {
+    background-image: url("/lobby_form_photos/jogging_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-basketball-image {
+    background-image: url("/lobby_form_photos/basketball_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-cycling-image {
+    background-image: url("/lobby_form_photos/cycling_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-football-image {
+    background-image: url("/lobby_form_photos/football_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-jogging-image {
+    background-image: url("/lobby_form_photos/jogging_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-swimming-image {
+    background-image: url("/lobby_form_photos/swimming_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-tennis-image {
+    background-image: url("/lobby_form_photos/tennis_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-volleyball-image {
+    background-image: url("/lobby_form_photos/volleyball_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.background-yoga-image {
+    background-image: url("/lobby_form_photos/yoga_photo.png");
+    background-position: "center";
+    background-size: cover;
+}
+
+.overlay {
+    position: fixed; 
+    bottom: 40px;
+    opacity: 1;
+}
