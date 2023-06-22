@@ -37,14 +37,14 @@ export const accountService = {
 		localStorage.removeItem("username");
 	},
 
-    async signup(firstName, lastName, email, password) {
+    async signup(user) {
         try {
             const user_data = {
-				username: firstName+'_'+lastName,
-                first_name: firstName,
-				last_name: lastName,
-				email: email,
-				password: password
+				username: user.firstName + user.lastName,
+                first_name: user.firstName,
+				last_name: user.lastName,
+				email: user.email,
+				password: user.password
             };
             await axios.post(this.baseUrl + "/register", user_data);
             return true;

@@ -15,7 +15,7 @@
 				<div class="container hero box is-fullheight">
 					<div class="hero-body">
 						<div class="container">
-							<h1 class="title is-size-1 has-text-centered">Login</h1>
+							<h1 class="title is-size-2 has-text-centered">Login</h1>
 							<LoginForm />
 						</div>
 					</div>

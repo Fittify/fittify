@@ -31,8 +31,8 @@
         {/each}
         </div>
         <a href="/create-lobby" class="a-link-without-decoration overlay is-flex">
-            <button class="button is-info is-rounded is-size-3">
-                <p class="column has-text-white is-size-3">+ Create Lobby</p>
+            <button class="button is-info is-rounded is-size-4">
+                <p class="column has-text-white is-size-4">+ Create Lobby</p>
             </button>
         </a>
     </div>
