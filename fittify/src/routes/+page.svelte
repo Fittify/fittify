@@ -18,15 +18,15 @@
 				<div class="columns is-centered">
 					<div class="column is-three-fifths is-centered">
 						<a href="/signup" class="a-link-without-decoration">
-							<button class="button is-info is-rounded is-fullwidth is-size-4">
-								<p class="column has-text-white is-size-3">Sign up!</p>
+							<button class="button is-info is-rounded is-fullwidth is-size-5">
+								<p class="column has-text-white is-size-4">Sign up!</p>
 							</button>
 						</a>
 					</div>
 				</div>
 				<div class="columns is-centered">
 					<div class="column is-half is-centered">
-						<p class="is-size-4 has-text-white black-background">Or if you already have an account - 
+						<p class="is-size-5 has-text-white black-background">Or if you already have an account - 
 							<a class="white-font-on-hover" href="/login">sign in</a>!
 						</p>
 					</div>
